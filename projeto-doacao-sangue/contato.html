@@ -29,9 +29,7 @@
       <div class="container">
         <div class="location-grid">
           <article class="contact-form-box">
-            <form name="contato" method="POST" data-netlify="true">
-              <input type="hidden" name="form-name" value="contato">
-
+            <form id="contact-form">
               <div class="form-row">
                 <div>
                   <label for="nome">Nome</label>
@@ -68,7 +66,7 @@
 
               <div>
                 <label for="mensagem">Mensagem</label>
-                <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem"></textarea>
+                <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" required></textarea>
               </div>
 
               <button type="submit">Enviar mensagem</button>

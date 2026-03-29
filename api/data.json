@@ -1,0 +1,28 @@
+{
+  "campanhas": [
+    {
+      "id": 1,
+      "categoria": "Urgente",
+      "titulo": "Baixo estoque de O-",
+      "descricao": "Precisamos urgentemente desse tipo sanguíneo."
+    },
+    {
+      "id": 2,
+      "categoria": "Informativo",
+      "titulo": "Doe com orientação",
+      "descricao": "Entenda os requisitos antes de doar."
+    }
+  ],
+  "requisitos": [
+    {
+      "id": 1,
+      "titulo": "Idade",
+      "descricao": "Entre 16 e 69 anos"
+    },
+    {
+      "id": 2,
+      "titulo": "Peso",
+      "descricao": "Mínimo 50kg"
+    }
+  ]
+}
