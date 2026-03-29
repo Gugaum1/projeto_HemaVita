@@ -6,7 +6,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const API_URL = "https://hemavita-api.onrender.com";
+const API_URL =
+  window.location.hostname === "localhost"
+    ? "http://localhost:3000"
+    : "https://hemavita-api.onrender.com";
 
 function getData() {
   const data = fs.readFileSync("./data.json", "utf-8");
