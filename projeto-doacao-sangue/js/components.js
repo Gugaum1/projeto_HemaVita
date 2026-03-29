@@ -12,7 +12,7 @@ async function carregarComponente(id, arquivo) {
   }
 }
 
-const API_URL = "http://localhost:3000";
+const API_URL = "https://hemavita-api.onrender.com";
 
 async function carregarCampanhas() {
   const container = document.querySelector(".campaign-grid");
