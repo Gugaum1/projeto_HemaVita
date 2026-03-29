@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | HemaVita Campina</title>
+  <link rel="icon" href="img/logo.png" type="image/png">
+  <meta name="description" content="Entre em contato com o projeto HemaVita Campina e envie dúvidas, sugestões ou interesse em apoiar a iniciativa.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="header-container"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-tag">Contato</span>
+        <h1>Fale com o HemaVita</h1>
+        <p>
+          Envie dúvidas, sugestões ou demonstre interesse em apoiar a iniciativa.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="location-grid">
+          <article class="contact-form-box">
+            <form name="contato" method="POST" data-netlify="true">
+              <input type="hidden" name="form-name" value="contato">
+
+              <div class="form-row">
+                <div>
+                  <label for="nome">Nome</label>
+                  <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                </div>
+
+                <div>
+                  <label for="email">E-mail</label>
+                  <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div>
+                  <label for="telefone">Telefone</label>
+                  <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+                </div>
+
+                <div>
+                  <label for="tipo">Tipo sanguíneo</label>
+                  <select id="tipo" name="tipo">
+                    <option value="">Selecione</option>
+                    <option>A+</option>
+                    <option>A-</option>
+                    <option>B+</option>
+                    <option>B-</option>
+                    <option>AB+</option>
+                    <option>AB-</option>
+                    <option>O+</option>
+                    <option>O-</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem"></textarea>
+              </div>
+
+              <button type="submit">Enviar mensagem</button>
+            </form>
+          </article>
+
+          <aside class="tips-card">
+            <h2>Por que doar sangue?</h2>
+            <ul class="tips-list">
+              <li>Uma única doação pode ajudar até 4 pessoas.</li>
+              <li>O processo é rápido, seguro e supervisionado.</li>
+              <li>Os estoques precisam ser mantidos regularmente.</li>
+              <li>Seu gesto pode fazer diferença em emergências.</li>
+              <li>Doar sangue é um ato simples de solidariedade.</li>
+            </ul>
+
+            <a href="quem-pode-doar.html" class="text-link">Ver requisitos para doar</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Projeto</span>
+          <h2>Por que entrar em contato?</h2>
+          <p>
+            O formulário pode ser usado para feedback, sugestões, dúvidas ou apoio à iniciativa.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <article class="contact-card">
+            <h3>Sugestões</h3>
+            <p>Compartilhe ideias para melhorar o conteúdo e a experiência do site.</p>
+          </article>
+
+          <article class="contact-card">
+            <h3>Dúvidas</h3>
+            <p>Envie perguntas relacionadas ao projeto e à proposta da plataforma.</p>
+          </article>
+
+          <article class="contact-card">
+            <h3>Parcerias</h3>
+            <p>Use esse espaço para futuras conexões acadêmicas, sociais ou institucionais.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-container"></div>
+  <script src="js/components.js"></script>
+</body>
+</html>
