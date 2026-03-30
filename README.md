@@ -156,7 +156,7 @@ Este projeto proporcionou aprendizado prático em:
 
 ## 👨‍💻 Autor
 
-**Guga**
+**Gustavo**
 Estudante de Análise e Desenvolvimento de Sistemas
 
 ---
