@@ -3,13 +3,10 @@ import cors from "cors";
 import fs from "fs";
 
 const app = express();
+const PORT = process.env.PORT || 3000;
+
 app.use(cors());
 app.use(express.json());
-
-const API_URL =
-  window.location.hostname === "localhost"
-    ? "http://localhost:3000"
-    : "https://hemavita-api.onrender.com";
 
 function getData() {
   const data = fs.readFileSync("./data.json", "utf-8");
@@ -19,6 +16,10 @@ function getData() {
 function saveData(data) {
   fs.writeFileSync("./data.json", JSON.stringify(data, null, 2));
 }
+
+app.get("/", (req, res) => {
+  res.send("API HemaVita funcionando!");
+});
 
 app.get("/campanhas", (req, res) => {
   const data = getData();
@@ -49,5 +50,5 @@ app.post("/contato", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Servidor rodando em http://localhost:${PORT}`);
+  console.log(`Servidor rodando na porta ${PORT}`);
 });
