@@ -41,7 +41,7 @@ A plataforma centraliza essas informações de forma clara, moderna e acessível
 
 ### Deploy
 
-* Frontend: Netlify
+* Frontend: Vercel
 * Backend: Render
 
 ---
