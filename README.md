@@ -2,7 +2,7 @@
 
 Projeto web desenvolvido com foco em **facilitar o acesso à informação sobre doação de sangue em Campina Grande (PB)**, conectando pessoas a orientações, campanhas e locais de doação.
 
-🔗 **Acesse o projeto:** https://hemavita.vercel.app
+🔗 **Acesse o projeto:** https://projeto-hema-vita.vercel.app
 
 ---
 
