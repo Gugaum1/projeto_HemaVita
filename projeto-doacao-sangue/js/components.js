@@ -37,6 +37,13 @@ async function carregarCampanhas() {
     });
   } catch (erro) {
     console.error("Erro ao carregar campanhas:", erro);
+    container.innerHTML = `
+      <article class="campaign-card urgent">
+        <span class="badge urgent-badge">Erro</span>
+        <h3>Não foi possível carregar as campanhas</h3>
+        <p>Tente novamente mais tarde.</p>
+      </article>
+    `;
   }
 }
 
@@ -60,6 +67,12 @@ async function carregarRequisitos() {
     });
   } catch (erro) {
     console.error("Erro ao carregar requisitos:", erro);
+    container.innerHTML = `
+      <article class="requirement-card">
+        <h3>Não foi possível carregar os requisitos</h3>
+        <p>Tente novamente mais tarde.</p>
+      </article>
+    `;
   }
 }
 
@@ -69,6 +82,12 @@ function configurarFormulario() {
 
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
+
+    const aceite = document.querySelector("#aceite-termos");
+    if (aceite && !aceite.checked) {
+      alert("Você precisa aceitar os Termos de Uso e a Política de Privacidade.");
+      return;
+    }
 
     const data = {
       nome: document.querySelector("#nome")?.value || "",
